@@ -65,7 +65,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 @Override
                 public void onLocationChanged(Location location) {
 
-                    SharedPreferences sharedPreferences = MapsActivity.this.getSharedPreferences("com.atilsamancioglu.mynewtravelbook", MODE_PRIVATE);
+                    SharedPreferences sharedPreferences = MapsActivity.this.getSharedPreferences("", MODE_PRIVATE);
                     boolean firstTimeCheck = sharedPreferences.getBoolean("notFirstTime", false);
 
                     if (!firstTimeCheck) {
